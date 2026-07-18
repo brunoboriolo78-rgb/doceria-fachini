@@ -14,6 +14,8 @@
 
 - **Texto principal:** Marrom chocolate escuro ou cinza-chumbo (evitar preto puro)
 
+- **Chocolate (cor de marca):** marrom chocolate rico — `#5b3a2b` (base) / `#37211a` (escuro). Usado em fundos fortes/escuros: CTA final, rodapé e o véu (scrim) do hero. Dá profundidade e "apetite" sem competir com o coral, que segue sendo o destaque/CTA.
+
 - **Fundo alternativo / cards:** Creme / bege claro
 
 - **Cor proibida:** Cores extremamente saturadas ou neon — quebra o clima premium
@@ -55,7 +57,7 @@ Poluir a peça com muito texto ou elementos. Usar cores saturadas/neon. Linguage
 
 ## Logo
 
-- **Arquivo:** *(pendente — Mariana vai adicionar em `identidade/logo.png`)*
+- **Arquivo:** `identidade/logo.png` ✓
 - **Versão pra fundo escuro:** *(pendente)*
 - **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
 - **Tamanho sugerido:** largura entre 120-200px nos HTMLs
@@ -65,4 +67,9 @@ Poluir a peça com muito texto ou elementos. Usar cores saturadas/neon. Linguage
 
 ## Observações adicionais
 
-Fotos de produto reais (bolos, corações de chocolate, brigadeiros, cookies) ainda pendentes de adicionar em `identidade/fotos/`. Direção fotográfica: fundo claro, luz natural, sombras suaves, alta definição, pouca edição, produto ocupando grande parte do quadro, close em textura (brilho do chocolate, morango fresco, decoração).
+Fotos de produto reais em `identidade/fotos/`:
+- `bolo-brigadeiro-morango.jpg` — bolo no pote com brigadeiro, morango e fita vermelha da marca
+- `bolo-pistache-morango.jpg` — bolo de pistache com morango e fita branca
+- `bolo-frutas-vermelhas.jpg` — bolo naked branco com morango/mirtilo e laços brancos
+
+Todas seguem a direção fotográfica ideal: fundo claro, luz natural, sombras suaves, alta definição, produto ocupando grande parte do quadro, close em textura (brilho do chocolate, morango fresco, decoração). Todas exibem a marca (fita, selo ou board) — reforça a identidade em cada foto.

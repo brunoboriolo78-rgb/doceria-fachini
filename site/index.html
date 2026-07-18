@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doceria Fachini — Confeitaria Artesanal</title>
+  <meta name="description" content="Confeitaria artesanal premium por Mariana Fachini. Bolos decorados, doces finos e chocolates feitos sob encomenda para os seus momentos especiais." />
+
+  <meta property="og:title" content="Doceria Fachini — Confeitaria Artesanal" />
+  <meta property="og:description" content="Bolos, doces finos e chocolates artesanais feitos sob encomenda para os seus momentos especiais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/bolo-brigadeiro-morango.jpg" />
+  <link rel="icon" type="image/png" href="assets/logo-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <img src="assets/logo-light.png" alt="Doceria Fachini" class="nav__logo nav__logo--light" />
+        <img src="assets/logo-full.png" alt="" aria-hidden="true" class="nav__logo nav__logo--dark" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#escolha">Cardápio</a>
+        <a href="#valores">Valores</a>
+        <a href="#galeria">Galeria</a>
+      </nav>
+      <a href="#" class="btn btn--sm js-whatsapp" data-msg="Olá! Vim pelo site e gostaria de fazer uma encomenda.">Fazer pedido</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <h1 class="visually-hidden">Doceria Fachini — Confeitaria artesanal premium por Mariana Fachini</h1>
+    <div class="hero__media">
+      <img class="hero__img" src="assets/hero-pistache.jpg" alt="Bolo de pistache com morangos, brigadeiros e a fita da Doceria Fachini" />
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <a href="#" class="btn btn--lg hero__cta js-whatsapp" data-msg="Olá! Vim pelo site e gostaria de fazer uma encomenda.">Fazer encomenda</a>
+  </section>
+
+  <!-- ===== ESCOLHA SEU BOLO ===== -->
+  <section class="escolha" id="escolha">
+    <div class="section-head">
+      <p class="eyebrow">Nosso cardápio</p>
+      <h2>Escolha o seu doce</h2>
+      <p class="section-head__sub">Tudo sob encomenda — personalizamos sabor, tamanho e decoração para a sua ocasião.</p>
+    </div>
+    <div class="escolha__grid">
+      <article class="feature">
+        <div class="feature__img"><img src="assets/galeria/g7-naked-choco.jpg" alt="Bolos de aniversário e naked cakes" loading="lazy" /></div>
+        <div class="feature__row">
+          <div>
+            <h3>Bolos &amp; Naked Cakes</h3>
+            <p>Aniversário, casamento, chá</p>
+          </div>
+          <a href="#" class="arrow-btn js-whatsapp" data-msg="Olá! Gostaria de encomendar um bolo. Poderia me passar opções e valores?" aria-label="Encomendar bolo">→</a>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__img"><img src="assets/galeria/g6-brigadeiros-gourmet.jpg" alt="Brigadeiros gourmet e doces finos" loading="lazy" /></div>
+        <div class="feature__row">
+          <div>
+            <h3>Brigadeiros &amp; Doces Finos</h3>
+            <p>Para festas e presentes</p>
+          </div>
+          <a href="#" class="arrow-btn js-whatsapp" data-msg="Olá! Gostaria de encomendar brigadeiros / doces finos. Poderia me passar sabores e valores?" aria-label="Encomendar doces">→</a>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__img"><img src="assets/galeria/g8-copo-felicidade.jpg" alt="Sobremesas e lembrancinhas" loading="lazy" /></div>
+        <div class="feature__row">
+          <div>
+            <h3>Sobremesas &amp; Lembrancinhas</h3>
+            <p>Copo da felicidade, pão de mel</p>
+          </div>
+          <a href="#" class="arrow-btn js-whatsapp" data-msg="Olá! Gostaria de conhecer as sobremesas e lembrancinhas da Doceria Fachini." aria-label="Ver sobremesas">→</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== DESTAQUE (estilo "service") ===== -->
+  <section class="destaque">
+    <div class="destaque__image">
+      <video class="destaque__video" autoplay muted loop playsinline poster="assets/bolo-frutas-vermelhas.jpg">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="destaque__content">
+      <p class="eyebrow">Feito para celebrar</p>
+      <h2>Um bolo que é o centro da festa</h2>
+      <p>
+        Naked cakes, bolos de andar e criações personalizadas para casamentos,
+        aniversários e datas que merecem algo à altura. Você imagina, a gente cria.
+      </p>
+      <a href="#" class="btn js-whatsapp" data-msg="Olá! Quero um bolo especial para uma data comemorativa. Podemos conversar?">Quero um bolo especial</a>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="galeria" id="galeria">
+    <div class="section-head">
+      <p class="eyebrow">Galeria</p>
+      <h2>Um pouco do que já saiu da nossa cozinha</h2>
+      <p class="section-head__sub">
+        Bolos de aniversário, naked cakes, doces finos e sobremesas — cada peça
+        feita sob encomenda para uma ocasião especial.
+      </p>
+    </div>
+    <div class="galeria__grid">
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g2-naked-morango.jpg" alt="Naked cake com morangos e brigadeiros" loading="lazy" /></div>
+        <figcaption>Naked cake de morango</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g5-chantininho-rosa.jpg" alt="Bolo chantininho rosa com laço" loading="lazy" /></div>
+        <figcaption>Chantininho rosa</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g6-brigadeiros-gourmet.jpg" alt="Brigadeiros gourmet variados" loading="lazy" /></div>
+        <figcaption>Brigadeiros gourmet</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g3-bolo-morangos.jpg" alt="Bolo coberto de morangos frescos" loading="lazy" /></div>
+        <figcaption>Bolo de morangos</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g7-naked-choco.jpg" alt="Naked cake de chocolate com morangos" loading="lazy" /></div>
+        <figcaption>Naked cake de chocolate</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g4-cha-rosas.jpg" alt="Bolo elegante com rosas para chá" loading="lazy" /></div>
+        <figcaption>Bolo com rosas</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g1-bolo-brigadeiro.jpg" alt="Bolo de brigadeiro com selo dourado" loading="lazy" /></div>
+        <figcaption>Bolo de brigadeiro</figcaption>
+      </figure>
+      <figure class="galeria__item">
+        <div class="galeria__photo"><img src="assets/galeria/g8-copo-felicidade.jpg" alt="Copos da felicidade" loading="lazy" /></div>
+        <figcaption>Copo da felicidade</figcaption>
+      </figure>
+    </div>
+    <p class="cardapio__note">
+      Veja muito mais no nosso Instagram
+      <a href="https://instagram.com/doceriafachini" target="_blank" rel="noopener">@doceriafachini</a>.
+    </p>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="section-head">
+      <p class="eyebrow">Quem prova, ama</p>
+      <h2>Palavras de quem já adoçou um momento</h2>
+      <p class="section-head__sub">Um pouquinho do carinho que recebemos de volta. Depoimentos de quem já provou.</p>
+    </div>
+    <div class="marquee" aria-label="Depoimentos de clientes da Doceria Fachini">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“O bolo de aniversário da minha filha foi o centro das atenções — lindo e absurdamente gostoso. Todo mundo pediu o contato.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Carolina M.</span>
+              <span class="depo__meta">Aniversário</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“Os brigadeiros gourmet do meu casamento foram um sucesso. Sabor de coisa feita à mão, do jeitinho que eu sonhei.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Juliana R.</span>
+              <span class="depo__meta">Casamento</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“A Mariana entendeu exatamente o que eu imaginava. O naked cake ficou de tirar o fôlego.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Fernanda L.</span>
+              <span class="depo__meta">Chá de bebê</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“Virou tradição: toda data especial da família tem doce da Fachini. Nunca decepciona.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Patrícia S.</span>
+              <span class="depo__meta">Cliente há 2 anos</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“O copo da felicidade faz jus ao nome. Presenteei minha mãe e ela amou cada colherada.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Beatriz A.</span>
+              <span class="depo__meta">Presente</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“Capricho em cada detalhe, do sabor à embalagem. Dá quase pena de cortar de tão bonito.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Renata C.</span>
+              <span class="depo__meta">Chá revelação</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“O bolo de aniversário da minha filha foi o centro das atenções — lindo e absurdamente gostoso. Todo mundo pediu o contato.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Carolina M.</span>
+              <span class="depo__meta">Aniversário</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“Os brigadeiros gourmet do meu casamento foram um sucesso. Sabor de coisa feita à mão, do jeitinho que eu sonhei.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Juliana R.</span>
+              <span class="depo__meta">Casamento</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“A Mariana entendeu exatamente o que eu imaginava. O naked cake ficou de tirar o fôlego.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Fernanda L.</span>
+              <span class="depo__meta">Chá de bebê</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“Virou tradição: toda data especial da família tem doce da Fachini. Nunca decepciona.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Patrícia S.</span>
+              <span class="depo__meta">Cliente há 2 anos</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“O copo da felicidade faz jus ao nome. Presenteei minha mãe e ela amou cada colherada.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Beatriz A.</span>
+              <span class="depo__meta">Presente</span>
+            </figcaption>
+          </figure>
+          <figure class="depo">
+            <div class="depo__stars" aria-hidden="true">★★★★★</div>
+            <blockquote>“Capricho em cada detalhe, do sabor à embalagem. Dá quase pena de cortar de tão bonito.”</blockquote>
+            <figcaption>
+              <span class="depo__name">Renata C.</span>
+              <span class="depo__meta">Chá revelação</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSSA HISTÓRIA ===== -->
+  <section class="historia" id="sobre">
+    <div class="historia__card">
+      <div class="historia__placeholder">
+        <img src="assets/logo-light.png" alt="" class="historia__logo" />
+        <span class="script">Mariana Fachini</span>
+        <small>Fundadora · foto em breve</small>
+      </div>
+    </div>
+    <div class="historia__content">
+      <h2>Nossa história</h2>
+      <p>
+        A Doceria Fachini começou como começam as coisas boas: numa cozinha de casa,
+        com receitas de família e a vontade de transformar momentos simples em memórias.
+        Das mãos de Mariana Fachini, o que era um gosto virou ofício — e cada encomenda
+        passou a nascer do mesmo cuidado dos primeiros bolos.
+      </p>
+      <p>
+        Apaixonada por detalhes, Mariana foi refinando cada receita até chegar a uma
+        confeitaria artesanal de verdade: ingredientes selecionados, chocolate nobre e
+        um acabamento pensado no mínimo detalhe. Nada industrial — tudo feito à mão e
+        sob encomenda, no tempo que cada doce pede.
+      </p>
+      <p>
+        Dos bolos de aniversário aos naked cakes de casamento, dos brigadeiros gourmet
+        às lembrancinhas, cada criação carrega afeto. É o docinho que alegra a mesa,
+        adoça a conversa e faz da data algo que fica na memória.
+      </p>
+      <p>
+        Para Mariana, um doce é muito mais que uma receita — é uma forma de estar
+        presente nos momentos que importam.
+      </p>
+      <p class="historia__quote">
+        “Cada encomenda eu preparo pensando em quem vai receber. É assim que eu levo
+        carinho pra dentro da casa das pessoas.”
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CARDÁPIO & VALORES ===== -->
+  <section class="valores" id="valores">
+    <div class="section-head">
+      <p class="eyebrow">Cardápio &amp; valores</p>
+      <h2>Valores para começar a planejar</h2>
+      <p class="section-head__sub">
+        Personalizamos sabor, tamanho e decoração para a sua ocasião. Estes são
+        valores de referência — faça seu orçamento pelo WhatsApp.
+      </p>
+    </div>
+
+    <div class="valores__grid">
+      <article class="preco-card">
+        <h3>Bolos</h3>
+        <ul class="preco-list">
+          <li><span>Mini bolo <em>· serve ~3</em></span><span class="preco">R$ 27</span></li>
+          <li><span>Bolo médio <em>· serve ~6</em></span><span class="preco">R$ 41</span></li>
+          <li><span>Bolo grande <em>· 10–12 pessoas</em></span><span class="preco">R$ 69</span></li>
+          <li><span>Red velvet caseiro</span><span class="preco">R$ 69</span></li>
+          <li><span>Naked cake <em>· 14 a 50 pessoas</em></span><span class="preco">R$ 180</span></li>
+          <li><span>Bolo chantininho <em>· aniversário</em></span><span class="preco">sob consulta</span></li>
+        </ul>
+        <p class="preco-nota">Vários sabores e recheios. Peça com 2 dias de antecedência.</p>
+      </article>
+
+      <article class="preco-card">
+        <h3>Brigadeiros</h3>
+        <ul class="preco-list">
+          <li><span>Cento tradicional</span><span class="preco">R$ 185</span></li>
+          <li><span>Cento gourmet</span><span class="preco">R$ 210</span></li>
+          <li><span>Caixinha <em>· 4 a 12 un</em></span><span class="preco">R$ 28</span></li>
+          <li><span>Especiais <em>· Ferrero, pistache</em></span><span class="preco">R$ 4,60/un</span></li>
+        </ul>
+        <p class="preco-nota">Pedido mínimo de 25 unidades por sabor no cento.</p>
+      </article>
+
+      <article class="preco-card">
+        <h3>Doces finos &amp; lembrancinhas</h3>
+        <ul class="preco-list">
+          <li><span>Docinhos gourmet <em>· un</em></span><span class="preco">R$ 4</span></li>
+          <li><span>Mini trufinha <em>· un</em></span><span class="preco">R$ 4,50</span></li>
+          <li><span>Mini pão de mel</span><span class="preco">R$ 8</span></li>
+          <li><span>Brownie recheado</span><span class="preco">R$ 14</span></li>
+          <li><span>Copo da felicidade</span><span class="preco">sob consulta</span></li>
+        </ul>
+        <p class="preco-nota">Ideais para festas, presentes e lembrancinhas.</p>
+      </article>
+    </div>
+
+    <div class="valores__cta">
+      <a href="#" class="btn btn--lg js-whatsapp" data-msg="Olá! Gostaria de fazer um orçamento com a Doceria Fachini.">Fazer meu orçamento</a>
+    </div>
+  </section>
+
+  <!-- ===== COMO ENCOMENDAR ===== -->
+  <section class="passos" id="encomendar">
+    <div class="section-head">
+      <p class="eyebrow">Como encomendar</p>
+      <h2>Simples como merece ser</h2>
+    </div>
+    <div class="passos__grid">
+      <div class="passo">
+        <span class="passo__num">1</span>
+        <h3>Escolha</h3>
+        <p>Conte o que você imagina — sabor, tamanho, ocasião e a data especial.</p>
+      </div>
+      <div class="passo">
+        <span class="passo__num">2</span>
+        <h3>Combine</h3>
+        <p>A gente ajusta cada detalhe com você e confirma valor e prazo pelo WhatsApp.</p>
+      </div>
+      <div class="passo">
+        <span class="passo__num">3</span>
+        <h3>Receba</h3>
+        <p>Seu pedido é preparado com todo o cuidado e entregue pronto para celebrar.</p>
+      </div>
+    </div>
+    <div class="passos__cta">
+      <a href="#" class="btn btn--lg js-whatsapp" data-msg="Olá! Vim pelo site e gostaria de fazer uma encomenda.">Começar minha encomenda</a>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final">
+    <img src="assets/logo-light.png" alt="Doceria Fachini" class="cta-final__logo" />
+    <h2>Vamos adoçar o seu próximo momento?</h2>
+    <p>Encomendas abertas para aniversários, casamentos, chá revelação, festas e presentes.</p>
+    <a href="#" class="btn btn--lg js-whatsapp" data-msg="Olá! Vim pelo site e gostaria de fazer uma encomenda.">Falar no WhatsApp</a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-light.png" alt="Doceria Fachini — Confeitaria artesanal por Mariana Fachini" />
+      </div>
+      <div class="footer__links">
+        <a href="#sobre">Sobre</a>
+        <a href="#escolha">Cardápio</a>
+        <a href="#valores">Valores</a>
+        <a href="#galeria">Galeria</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://instagram.com/doceriafachini" target="_blank" rel="noopener">Instagram · @doceriafachini</a>
+        <a href="#" class="js-whatsapp" data-msg="Olá! Vim pelo site da Doceria Fachini.">WhatsApp · (19) 99619-9232</a>
+        <span class="footer__hours">Atendimento: Ter a Sáb · 10h às 18h</span>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="ano"></span> Doceria Fachini · Feito com carinho</p>
+  </footer>
+
+  <!-- ===== LIGHTBOX GALERIA ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Foto ampliada">
+    <button class="lightbox__close" id="lbClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Foto anterior">&lsaquo;</button>
+    <img class="lightbox__img" id="lbImg" src="" alt="" />
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima foto">&rsaquo;</button>
+  </div>
+
+  <a href="#" class="whatsapp-float js-whatsapp" data-msg="Olá! Vim pelo site e gostaria de fazer uma encomenda." aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.7 4.7-10.4 10.5-10.4S26.5 9.8 26.5 15.5 21.8 25.8 16 25.8zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2s-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3s0-.5.1-.7c.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5s0-.4 0-.6c-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

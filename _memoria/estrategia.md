@@ -13,7 +13,11 @@ Gargalo atual: tempo/produção — volume de encomendas maior do que a capacida
 
 ## O que pode esperar
 
-Nada registrado ainda.
+Site vitrine — próximas melhorias combinadas (lembrar de fazer):
+- Seção de **FAQ** (preço, prazo, antecedência, entrega, pagamento, personalização) — reduz dúvidas repetitivas no WhatsApp
+- **Bloco de infos práticas** (área/taxa de entrega, antecedência mínima, formas de pagamento)
+- **SEO local** (dados estruturados LocalBusiness/Bakery) pra aparecer em buscas "confeitaria [cidade]"
+- Foto real da Mariana na seção "Nossa história" (hoje é placeholder)
 
 ## Contexto com prazo
 
