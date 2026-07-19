@@ -39,6 +39,7 @@ body {
   font-weight: 300;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* ===== HELPERS ===== */
@@ -122,7 +123,7 @@ section[id] { scroll-margin-top: 84px; }
 
 /* ===== HERO ===== */
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-.hero { position: relative; min-height: 100vh; overflow: hidden; }
+.hero { position: relative; min-height: 100vh; min-height: 100svh; overflow: hidden; }
 .hero__media { position: absolute; inset: 0; z-index: 0; }
 .hero__img { width: 100%; height: 100%; object-fit: cover; display: block; background: var(--cream-2); }
 .hero__scrim {
@@ -408,8 +409,16 @@ section[id] { scroll-margin-top: 84px; }
   .nav__toggle { display: flex; order: 3; }
   .nav .btn--sm { display: none; }
 
-  .hero { padding: 6rem 1.2rem 4.5rem; }
-  .hero__text { margin-left: auto; margin-right: auto; }
+  .nav__inner { gap: 1rem; padding: 0.6rem 1.15rem; }
+  .nav__toggle { display: flex; margin-left: auto; }
+  .nav:has(.nav__links.open) {
+    background: rgba(250,246,242,0.97);
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+    box-shadow: 0 6px 24px rgba(90,60,50,0.08);
+  }
+  .nav:has(.nav__links.open) .nav__logo--light { display: none; }
+  .nav:has(.nav__links.open) .nav__logo--dark { display: block; }
+  .nav:has(.nav__links.open) .nav__toggle span { background: var(--ink); }
 
   .escolha__grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
   .historia { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
@@ -422,6 +431,74 @@ section[id] { scroll-margin-top: 84px; }
   .destaque__content { max-width: none; }
   .galeria__grid { grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
   .passos__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ===== AJUSTES MOBILE (enquadramento, respiro e toque) ===== */
+@media (max-width: 700px) {
+  section[id] { scroll-margin-top: 64px; }
+  .nav__logo { height: 34px; }
+
+  /* hero: banner panoramico — altura menor pra o bolo caber inteiro */
+  .hero { min-height: 0; height: clamp(390px, 56svh, 540px); }
+  .hero__img { object-position: 50% 52%; animation-name: heroZoomSoft; }
+  @keyframes heroZoomSoft { to { transform: scale(1.06) translateY(2%); } }
+  .hero__scrim {
+    background: linear-gradient(180deg, rgba(55,33,26,0.62) 0%, rgba(55,33,26,0.10) 32%, rgba(55,33,26,0.14) 56%, rgba(55,33,26,0.62) 100%);
+  }
+  .hero__cta {
+    bottom: 1.5rem;
+    width: min(300px, calc(100% - 2.4rem));
+    padding-inline: 1.2rem;
+  }
+
+  h2 { font-size: clamp(1.8rem, 6.4vw, 2.4rem); }
+  .section-head { margin-bottom: 2.4rem; }
+  .section-head__sub { font-size: 0.95rem; }
+  .escolha { padding-inline: 1.15rem; }
+
+  .feature__row { padding: 1.05rem 1.1rem; gap: 0.7rem; }
+  .feature__row h3 { font-size: 1.15rem; }
+  .feature__row p { font-size: 0.8rem; }
+  .arrow-btn { width: 40px; height: 40px; }
+
+  /* historia: titulo centralizado, texto longo alinhado a esquerda (leitura) */
+  .historia { text-align: left; padding-inline: 1.3rem; }
+  .historia__content h2 { text-align: center; }
+  .historia__quote { font-size: 1.15rem; padding-left: 1rem; }
+
+  .valores { padding-inline: 1.15rem; }
+  .preco-card { padding: 1.6rem 1.25rem; }
+  .preco-list li { gap: 0.6rem; font-size: 0.9rem; }
+  .preco-list li > span:first-child { flex: 1 1 auto; min-width: 0; }
+  .preco { font-size: 1.05rem; }
+  .preco-list em { display: block; }
+
+  .depo { width: min(320px, 82vw); padding: 1.4rem; }
+  .depo blockquote { font-size: 1.02rem; }
+  .marquee__group { gap: 1rem; padding-right: 1rem; }
+  .marquee {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  }
+
+  .galeria { padding-inline: 1.15rem; }
+  .galeria__grid { gap: 0.8rem; }
+  .galeria__item { padding: 8px 8px 0; }
+  .galeria__item figcaption { font-size: 0.92rem; padding: 0.6rem 0.2rem 0.8rem; }
+  .cardapio__note { font-size: 0.9rem; }
+
+  .destaque { padding-inline: 1.3rem; }
+  .passos { padding-inline: 1.15rem; }
+
+  .cta-final { padding-inline: 1.3rem; }
+  .cta-final__logo { height: 60px; margin-bottom: 1.4rem; }
+
+  .whatsapp-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
+  .whatsapp-float svg { width: 25px; height: 25px; }
+
+  .footer { padding: 3rem 1.3rem 1.6rem; }
+  .footer__inner { flex-direction: column; gap: 1.8rem; }
+  .footer__brand img { height: 54px; }
 }
 
 @media (max-width: 480px) {
