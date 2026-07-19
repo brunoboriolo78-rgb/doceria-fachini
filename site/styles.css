@@ -1,6 +1,6 @@
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; overflow-x: clip; }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 
@@ -39,7 +39,6 @@ body {
   font-weight: 300;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 /* ===== HELPERS ===== */
@@ -290,15 +289,19 @@ section[id] { scroll-margin-top: 84px; }
 .passos__cta { text-align: center; margin-top: 3.5rem; }
 
 /* ===== CTA FINAL ===== */
-.cta-final { background: linear-gradient(160deg, var(--chocolate) 0%, var(--chocolate-dark) 100%); color: var(--white); text-align: center; padding: clamp(4rem, 8vw, 6.5rem) 1.5rem; }
-.cta-final__logo { width: auto; height: 76px; margin: 0 auto 1.8rem; }
-.cta-final h2 { color: var(--white); margin-bottom: 1rem; }
-.cta-final p { color: rgba(255,255,255,0.9); max-width: 34rem; margin: 0 auto 2.2rem; }
-.cta-final .btn { background: var(--white); color: var(--coral-dark); border-color: var(--white); }
-.cta-final .btn:hover { background: var(--cream); border-color: var(--cream); }
+.cta-final {
+  background: linear-gradient(168deg, var(--cream) 0%, #f8e9e1 50%, var(--coral-soft) 100%);
+  color: var(--ink); text-align: center;
+  padding: clamp(4.5rem, 9vw, 7rem) 1.5rem;
+}
+.cta-final .eyebrow { color: var(--coral-dark); margin-bottom: 0.9rem; }
+.cta-final h2 { color: var(--ink); margin-bottom: 1rem; }
+.cta-final p { color: var(--ink-soft); max-width: 34rem; margin: 0 auto 2.2rem; }
+.cta-final .btn { background: var(--coral); color: var(--white); border-color: var(--coral); }
+.cta-final .btn:hover { background: var(--coral-dark); border-color: var(--coral-dark); }
 
 /* ===== FOOTER ===== */
-.footer { background: var(--chocolate-dark); color: rgba(255,255,255,0.75); padding: 3.5rem 1.5rem 2rem; }
+.footer { background: var(--chocolate-dark); color: rgba(255,255,255,0.72); padding: 4rem 1.5rem 2rem; }
 .footer__inner {
   max-width: var(--maxw); margin: 0 auto;
   display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between; align-items: flex-start;
@@ -491,7 +494,6 @@ section[id] { scroll-margin-top: 84px; }
   .passos { padding-inline: 1.15rem; }
 
   .cta-final { padding-inline: 1.3rem; }
-  .cta-final__logo { height: 60px; margin-bottom: 1.4rem; }
 
   .whatsapp-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
   .whatsapp-float svg { width: 25px; height: 25px; }
